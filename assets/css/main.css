@@ -1,0 +1,87 @@
+:root {
+  --fg: #1a1a1a;
+  --fg-muted: #555;
+  --fg-faint: #888;
+  --bg: #fdfdfc;
+  --accent: #0a5d8f;
+  --rule: #e6e3dc;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #e8e6e1;
+    --fg-muted: #b3afa6;
+    --fg-faint: #8a857c;
+    --bg: #18181a;
+    --accent: #6cb4e0;
+    --rule: #2c2c2f;
+  }
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+main {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 4rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin: 0 0 0.4rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 2.5rem 0 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--rule);
+  letter-spacing: -0.005em;
+}
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.5rem;
+}
+
+p { margin: 0.75rem 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+ul { padding-left: 1.25rem; margin: 0.5rem 0 1rem; }
+li { margin: 0.4rem 0; }
+
+/* The contact line right under the H1 (rendered via the first <p> of the doc). */
+h1 + p {
+  color: var(--fg-muted);
+  font-size: 0.95rem;
+  margin-top: 0;
+  margin-bottom: 1.75rem;
+}
+h1 + p a { color: inherit; }
+
+/* The "lead" intro paragraph (first paragraph after the first H2). */
+h2 + p { color: var(--fg-muted); }
+
+hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 3rem 0 1.5rem;
+}
+
+strong { font-weight: 600; }
+
+/* Timeline entries: bold role line + soft-broken description. */
+.timeline-when { color: var(--fg-faint); font-size: 0.9rem; font-weight: 400; }
+.timeline-desc { color: var(--fg-muted); font-size: 0.95rem; }

@@ -1,0 +1,12 @@
+title: 付瑶 · Yao Fu
+description: 后端工程师，长期做路径规划、优化引擎、地图类系统。
+url: https://fubupc.github.io
+lang: zh-CN
+encoding: utf-8
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+exclude:
+  - README.md
+  - .gitignore
