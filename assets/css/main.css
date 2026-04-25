@@ -82,6 +82,21 @@ hr {
 
 strong { font-weight: 600; }
 
-/* Timeline entries: bold role line + soft-broken description. */
-.timeline-when { color: var(--fg-faint); font-size: 0.9rem; font-weight: 400; }
-.timeline-desc { color: var(--fg-muted); font-size: 0.95rem; }
+/* Definition list — used for the work-experience timeline.
+   <dt> = role/company line, <dd> = description below. */
+dl {
+  margin: 0.5rem 0 1rem;
+}
+dt {
+  margin-top: 1rem;
+  font-weight: 400;
+}
+dt:first-child {
+  margin-top: 0;
+}
+dd {
+  margin: 0.15rem 0 0;
+  padding-left: 0;
+  color: var(--fg-muted);
+  font-size: 0.95rem;
+}
