@@ -1,0 +1,10 @@
+{
+  "name": "fubupc-github-io-scripts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Helpers for rendering resume markdown to PDF.",
+  "dependencies": {
+    "marked": "^14.0.0"
+  }
+}
